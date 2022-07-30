@@ -1,0 +1,17 @@
+# Secret Files
+.env
+*.pem
+
+
+# Python
+__pycache__
+
+# Jupyter notebook
+.ipynb_checkpoints
+
+
+# MacOS Stuff
+*.DS_Store
+
+# vscode
+.vscode
