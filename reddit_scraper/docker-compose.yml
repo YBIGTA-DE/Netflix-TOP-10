@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  # jupyterlab with pyspark
+  pyspark:
+    image: antares/reddit-drama-crawl
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/home/jovyan/work
